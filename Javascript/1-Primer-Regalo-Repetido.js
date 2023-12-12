@@ -13,7 +13,7 @@ function findFirstRepeated(gifts) {
     let repeats = [];
     for (let index = 0; index < gifts.length; index++) {
         const element = gifts[index];
-        //console.log(gifts.indexOf(element), "indice");
+        console.log(gifts.indexOf(element), index); // 0 0, 1 1, 2 2, 3 3, 2 4, 0 5
         if (gifts.indexOf(element) != index) {
             repeats.push(element);
         }
